@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap3',
     'accounts',
 ]
 
@@ -123,3 +124,6 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIR = [
     STATIC_DIR,
 ]
+
+LOGIN_REDIRECT_URL = 'test'
+LOGOUT_REDIRECT_URL = 'thanks'
